@@ -1,0 +1,15 @@
+# This action is perform linting on the included feature files of this project
+
+name: Gherkin Lint
+on: workflow_call
+
+jobs: 
+    # set up github gherkin linter
+    gherk-lint:
+        runs-on: ubuntu-latest
+        steps: 
+        - uses: actions/checkout@v4
+        - uses: restqa/gherkin-linter-action@0.0.1
+          with: 
+            path: 'test/'
+            config_file: 'test/.gherkin-lintrc'
