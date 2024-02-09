@@ -1,0 +1,633 @@
+[
+    {
+        "id": 1,
+        "is_active": true,
+        "type_id": 3,
+        "name": "preconds",
+        "system_name": "custom_preconds",
+        "label": "Preconditions",
+        "description": "The preconditions of this test case. Reference other test cases with [C#] (e.g. [C17]).",
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": null
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "format": "markdown",
+                    "rows": "7"
+                },
+                "id": "4be1344d55d11"
+            }
+        ],
+        "display_order": 4,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 2,
+        "is_active": true,
+        "type_id": 3,
+        "name": "steps",
+        "system_name": "custom_steps",
+        "label": "Steps",
+        "description": "The required steps to execute the test case.",
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": null
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "format": "markdown",
+                    "rows": "7"
+                },
+                "id": "4be97c65ea2fd"
+            }
+        ],
+        "display_order": 5,
+        "include_all": false,
+        "template_ids": [
+            1
+        ]
+    },
+    {
+        "id": 3,
+        "is_active": true,
+        "type_id": 3,
+        "name": "expected",
+        "system_name": "custom_expected",
+        "label": "Expected Result",
+        "description": "The expected result after executing the test case.",
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": null
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "format": "markdown",
+                    "rows": "7"
+                },
+                "id": "4be1345cafd07"
+            }
+        ],
+        "display_order": 6,
+        "include_all": false,
+        "template_ids": [
+            1
+        ]
+    },
+    {
+        "id": 10,
+        "is_active": true,
+        "type_id": 10,
+        "name": "steps_separated",
+        "system_name": "custom_steps_separated",
+        "label": "Steps",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": null
+                },
+                "options": {
+                    "is_required": false,
+                    "format": "markdown",
+                    "has_expected": true,
+                    "rows": "5"
+                },
+                "id": "4be97c65ea2fd"
+            }
+        ],
+        "display_order": 8,
+        "include_all": false,
+        "template_ids": [
+            2,
+            6
+        ]
+    },
+    {
+        "id": 14,
+        "is_active": true,
+        "type_id": 6,
+        "name": "testmethod",
+        "system_name": "custom_testmethod",
+        "label": "Test Method",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": []
+                },
+                "options": {
+                    "is_required": true,
+                    "default_value": "1",
+                    "items": "1,Manual\n2,Candidate\n3,Automated\n4,Automated - Partial"
+                },
+                "id": "05d68f0f-5870-40f5-95ba-8254631db858"
+            }
+        ],
+        "display_order": 6,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 16,
+        "is_active": true,
+        "type_id": 6,
+        "name": "android_options",
+        "system_name": "custom_android_options",
+        "label": "Test Method - Android",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": []
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "items": "1,Manual\n2,Candidate\n6,Automated"
+                },
+                "id": "92d1b9f2-1a02-4d56-8e75-0972ab020bcc"
+            }
+        ],
+        "display_order": 7,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 17,
+        "is_active": true,
+        "type_id": 6,
+        "name": "ios_options",
+        "system_name": "custom_ios_options",
+        "label": "Test Method - iOS",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": []
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "items": "1,Manual\n2,Candidate\n6,Automated"
+                },
+                "id": "f67cbbdd-af41-44d6-b979-3e061c2792ae"
+            }
+        ],
+        "display_order": 8,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 18,
+        "is_active": true,
+        "type_id": 5,
+        "name": "carnival",
+        "system_name": "custom_carnival",
+        "label": "Carnival",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        27,
+                        22,
+                        1
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "0"
+                },
+                "id": "fdc0a491-dc86-4d5b-b45f-b95be2666657"
+            }
+        ],
+        "display_order": 9,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 19,
+        "is_active": true,
+        "type_id": 5,
+        "name": "marketplace",
+        "system_name": "custom_marketplace",
+        "label": "MarketPlace",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        27,
+                        8,
+                        29,
+                        22,
+                        18,
+                        17,
+                        1
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "0"
+                },
+                "id": "5e845431-14a0-4b0d-9a52-36f442852e6f"
+            }
+        ],
+        "display_order": 10,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 20,
+        "is_active": true,
+        "type_id": 5,
+        "name": "gxp",
+        "system_name": "custom_gxp",
+        "label": "GXP",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        1
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "0"
+                },
+                "id": "43171808-2747-40af-a6c7-cbfeebe4ea7f"
+            }
+        ],
+        "display_order": 11,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 21,
+        "is_active": true,
+        "type_id": 3,
+        "name": "req_id",
+        "system_name": "custom_req_id",
+        "label": "Business Requirements",
+        "description": "Reference to Business Rules",
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        25,
+                        41,
+                        21,
+                        30,
+                        28,
+                        40,
+                        27,
+                        26,
+                        43,
+                        45,
+                        47,
+                        46,
+                        49,
+                        48,
+                        44,
+                        19,
+                        39,
+                        37,
+                        33,
+                        35,
+                        32,
+                        36,
+                        34,
+                        29,
+                        22,
+                        1,
+                        31,
+                        50,
+                        42,
+                        15,
+                        12,
+                        38,
+                        23
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "format": "markdown",
+                    "rows": ""
+                },
+                "id": "1fa1d8b5-5ca4-4ac5-87df-6d1c8e744cb9"
+            }
+        ],
+        "display_order": 3,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 22,
+        "is_active": true,
+        "type_id": 3,
+        "name": "notes",
+        "system_name": "custom_notes",
+        "label": "notes",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        25,
+                        41,
+                        21,
+                        30,
+                        28,
+                        40,
+                        27,
+                        26,
+                        43,
+                        45,
+                        47,
+                        46,
+                        49,
+                        48,
+                        44,
+                        19,
+                        39,
+                        37,
+                        33,
+                        35,
+                        32,
+                        36,
+                        34,
+                        29,
+                        22,
+                        1,
+                        31,
+                        50,
+                        42,
+                        15,
+                        12,
+                        38,
+                        23
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "",
+                    "format": "markdown",
+                    "rows": ""
+                },
+                "id": "08debab8-2d6d-42da-b621-302004a3a805"
+            }
+        ],
+        "display_order": 7,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 23,
+        "is_active": true,
+        "type_id": 1,
+        "name": "pos_version",
+        "system_name": "custom_pos_version",
+        "label": "POS Version",
+        "description": "The version of POS where the feature was introduced or updated.",
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        48
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": ""
+                },
+                "id": "f5e80376-c33a-443a-99b9-72d54459e8df"
+            }
+        ],
+        "display_order": 12,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 24,
+        "is_active": true,
+        "type_id": 6,
+        "name": "case_status",
+        "system_name": "custom_case_status",
+        "label": "Status",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": []
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": "1",
+                    "items": "1, Draft\n2, Work In Progress\n3, Needs Review\n4, In Review\n5, Done"
+                },
+                "id": "9cb88dc3-9e9b-419e-a068-158531cc2717"
+            }
+        ],
+        "display_order": 13,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 25,
+        "is_active": true,
+        "type_id": 7,
+        "name": "caseassignee",
+        "system_name": "custom_caseassignee",
+        "label": "Assignee",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        18
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": ""
+                },
+                "id": "b789b213-8ee4-4253-8633-f76c59d39ed7"
+            }
+        ],
+        "display_order": 14,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 26,
+        "is_active": true,
+        "type_id": 1,
+        "name": "label",
+        "system_name": "custom_label",
+        "label": "Label",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        44
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "default_value": ""
+                },
+                "id": "da030639-d682-406a-a469-df8ab310d139"
+            }
+        ],
+        "display_order": 4,
+        "include_all": true,
+        "template_ids": []
+    },
+    {
+        "id": 27,
+        "is_active": true,
+        "type_id": 12,
+        "name": "mobileclients",
+        "system_name": "custom_mobileclients",
+        "label": "Mobile Clients",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        18
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "items": "1, VRTP\n2, Cedar Fair\n3, Grupo Vidanta\n4, Merlin\n5, Alterra WLA\n6, All\n7, Perfect North\n8, Six Flags"
+                },
+                "id": "5ecb52a1-4f53-4c05-9dcc-54c6b78117e6"
+            }
+        ],
+        "display_order": 2,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 28,
+        "is_active": true,
+        "type_id": 12,
+        "name": "mobiletags",
+        "system_name": "custom_mobiletags",
+        "label": "Mobile Tags",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": false,
+                    "project_ids": [
+                        18
+                    ]
+                },
+                "options": {
+                    "is_required": false,
+                    "items": "1, Home\n2, Events\n3, Map\n4, Store\n5, Dining\n6, Profile\n7, Info\n8, Messaging\n9, Guest Preferences\n10, Hours and Directions\n11, Ride Wait Times\n12, Ticketing\n13, Queueing\n14, Native F&B\n15, Webapp F&B\n16, Brand Me\n17, Brand Home\n18, Takeover\n19, Wearlynx"
+                },
+                "id": "57c25990-ec24-4a8c-aebb-127c6d8d1abe"
+            }
+        ],
+        "display_order": 1,
+        "include_all": false,
+        "template_ids": [
+            1,
+            2,
+            3,
+            5
+        ]
+    },
+    {
+        "id": 29,
+        "is_active": true,
+        "type_id": 13,
+        "name": "testrail_bdd_scenario",
+        "system_name": "custom_testrail_bdd_scenario",
+        "label": "BDD Scenarios",
+        "description": null,
+        "configs": [
+            {
+                "context": {
+                    "is_global": true,
+                    "project_ids": []
+                },
+                "options": {
+                    "is_required": false,
+                    "format": "markdown",
+                    "rows": "6"
+                },
+                "id": "b8ec6053-7705-40a4-91c7-b0405e42cfce"
+            }
+        ],
+        "display_order": 2,
+        "include_all": false,
+        "template_ids": [
+            5
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Acceptance",
+        "is_default": false
+    },
+    {
+        "id": 2,
+        "name": "Accessibility",
+        "is_default": false
+    },
+    {
+        "id": 4,
+        "name": "Compatibility",
+        "is_default": false
+    },
+    {
+        "id": 6,
+        "name": "Functional",
+        "is_default": true
+    },
+    {
+        "id": 7,
+        "name": "Other",
+        "is_default": false
+    },
+    {
+        "id": 8,
+        "name": "Performance",
+        "is_default": false
+    },
+    {
+        "id": 9,
+        "name": "Regression",
+        "is_default": false
+    },
+    {
+        "id": 10,
+        "name": "Security",
+        "is_default": false
+    },
+    {
+        "id": 11,
+        "name": "Smoke & Sanity",
+        "is_default": false
+    },
+    {
+        "id": 12,
+        "name": "Usability",
+        "is_default": false
+    }
+]
